@@ -6,6 +6,9 @@ import "../styles/help.css";
 const questions = [
     {
         question: "Buyurtmani qanday beraman?",
+
+
+        
         answer:
             "Kerakli mahsulotni savatga qo‘shing. Savatga kirib, “Buyurtma berish” tugmasini bosing. Keyin ism, telefon raqam va yetkazib berish manzilingizni kiriting.",
     },
