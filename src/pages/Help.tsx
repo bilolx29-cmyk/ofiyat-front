@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "../styles/help.css";
+import "../styles/Help.css";
 
 const questions = [
     {
         question: "Buyurtmani qanday beraman?",
 
 
-        
+
         answer:
             "Kerakli mahsulotni savatga qo‘shing. Savatga kirib, “Buyurtma berish” tugmasini bosing. Keyin ism, telefon raqam va yetkazib berish manzilingizni kiriting.",
     },
