@@ -1,0 +1,10 @@
+.hero-image {
+  width: 55%;
+  
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}

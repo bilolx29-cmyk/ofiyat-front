@@ -1,0 +1,791 @@
+.product-detail-page {
+    min-height: calc(100vh - 140px);
+    background: #f7f8f7;
+    padding: 40px 20px 70px;
+}
+
+.product-detail-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ORQAGA */
+.product-detail-back {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 25px;
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.product-detail-back:hover {
+    color: #16a34a;
+}
+
+/* ASOSIY MAHSULOT */
+.product-detail-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 45px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* RASM */
+.product-detail-image {
+    width: 100%;
+    height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    border-radius: 20px;
+    background: #f8f8f8;
+}
+
+.product-detail-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    padding: 25px;
+    box-sizing: border-box;
+
+    transition: transform 0.3s ease;
+}
+
+.product-detail-image img:hover {
+    transform: scale(1.03);
+}
+
+/* MAHSULOT MA'LUMOTLARI */
+.product-detail-info h1 {
+    margin: 0 0 15px;
+
+    color: #111827;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+/* REYTING */
+.product-detail-rating {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 28px;
+}
+
+.product-detail-rating>span:first-child {
+    color: #f59e0b;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.product-detail-rating strong {
+    color: #222;
+    font-size: 16px;
+}
+
+.review-count {
+    color: #777;
+    font-size: 14px;
+}
+
+/* NARX */
+.product-detail-price {
+    margin-bottom: 28px;
+
+    color: #111827;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* SAVATGA */
+.product-detail-cart {
+    width: 100%;
+    padding: 16px 25px;
+
+    border: none;
+    border-radius: 13px;
+
+    background: #16a34a;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+
+.product-detail-cart:hover:not(:disabled) {
+    background: #15803d;
+    transform: translateY(-1px);
+}
+
+.product-detail-cart:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.product-detail-cart:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+}
+
+/* XATO */
+.product-detail-error {
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+    color: #dc2626;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* ========================= */
+/* SHARHLAR */
+/* ========================= */
+
+.product-reviews {
+    margin-top: 35px;
+
+    padding: 35px;
+
+    background: #ffffff;
+    border-radius: 24px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* SHARH HEADER */
+.product-reviews-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.product-reviews-header h2 {
+    margin: 0;
+
+    color: #111827;
+    font-size: 24px;
+}
+
+/* UMUMIY REYTING */
+.product-reviews-summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-reviews-summary strong {
+    color: #111827;
+    font-size: 24px;
+}
+
+.product-reviews-summary span {
+    color: #f59e0b;
+
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.product-reviews-summary small {
+    color: #777;
+    font-size: 14px;
+}
+
+/* SHARH YO'Q */
+.no-reviews {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    color: #777;
+    font-size: 15px;
+
+    background: #f8f9f8;
+    border-radius: 15px;
+}
+
+/* SHARHLAR RO'YXATI */
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* BITTA SHARH */
+.product-review-item {
+    padding: 22px;
+
+    background: #f8f9f8;
+
+    border: 1px solid #eeeeee;
+    border-radius: 16px;
+
+    transition: 0.2s;
+}
+
+.product-review-item:hover {
+    border-color: #d9e9dd;
+}
+
+/* ISM VA SANA */
+.review-item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 10px;
+}
+
+.review-item-top strong {
+    color: #222;
+    font-size: 15px;
+}
+
+.review-item-top span {
+    color: #999;
+    font-size: 13px;
+}
+
+/* YULDUZLAR */
+.review-item-stars {
+    margin-bottom: 10px;
+
+    color: #f59e0b;
+
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+/* SHARH MATNI */
+.product-review-item p {
+    margin: 0;
+
+    color: #444;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* TABLET / TELEFON */
+/* ========================= */
+
+@media (max-width: 768px) {
+    .product-detail-page {
+        padding: 25px 15px 50px;
+    }
+
+    .product-detail-card {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 20px;
+
+        border-radius: 18px;
+    }
+
+    .product-detail-image {
+        height: 350px;
+    }
+
+    .product-detail-info h1 {
+        font-size: 27px;
+    }
+
+    .product-detail-price {
+        font-size: 26px;
+    }
+
+    .product-reviews {
+        padding: 22px 18px;
+
+        border-radius: 18px;
+    }
+
+    .product-reviews-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .product-reviews-header h2 {
+        font-size: 21px;
+    }
+
+    .product-reviews-summary {
+        flex-wrap: wrap;
+    }
+}
+
+/* KICHIK TELEFON */
+@media (max-width: 480px) {
+    .product-detail-image {
+        height: 280px;
+    }
+
+    .product-detail-card {
+        padding: 15px;
+    }
+
+    .product-detail-info h1 {
+        font-size: 24px;
+    }
+
+    .product-detail-price {
+        font-size: 24px;
+    }
+
+    .product-detail-cart {
+        padding: 14px 20px;
+    }
+
+    .product-reviews {
+        margin-top: 20px;
+        padding: 18px 14px;
+    }
+
+    .product-review-item {
+        padding: 17px;
+    }
+
+    .review-item-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.product-detail-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 60px;
+}
+
+/* =========================
+   BACK
+========================= */
+
+.product-detail-back {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #374151;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.product-detail-back:hover {
+    color: #111827;
+}
+
+/* =========================
+   MAIN PRODUCT
+========================= */
+
+.product-detail-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #e5e7eb;
+}
+
+/* IMAGE */
+
+.product-detail-image {
+    width: 100%;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fb;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.product-detail-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    display: block;
+}
+
+.product-detail-no-image {
+    font-size: 80px;
+}
+
+/* INFO */
+
+.product-detail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-detail-category {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-detail-info h1 {
+    margin: 0 0 16px;
+    color: #111827;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+/* RATING */
+
+.product-detail-rating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.product-detail-rating span:first-child {
+    color: #111827;
+    font-weight: 600;
+}
+
+/* PRICE */
+
+.product-detail-price {
+    margin-bottom: 12px;
+    color: #111827;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* STOCK */
+
+.product-detail-stock {
+    margin-bottom: 24px;
+    color: #16a34a;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* ADD BUTTON */
+
+.product-detail-add {
+    width: 100%;
+    min-height: 52px;
+    border: none;
+    border-radius: 12px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.product-detail-add:hover {
+    opacity: 0.9;
+}
+
+.product-detail-add:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+}
+
+/* =========================
+   BATAFSIL MA'LUMOT
+========================= */
+
+.product-description {
+    margin-top: 24px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+}
+
+.product-description h2 {
+    margin: 0 0 22px;
+    color: #111827;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.product-description-content {
+    padding: 20px;
+    background: #f8f9fb;
+    border-radius: 14px;
+}
+
+.product-composition h3 {
+    margin: 0 0 10px;
+    color: #111827;
+    font-size: 17px;
+}
+
+.product-composition p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+/* =========================
+   REVIEWS
+========================= */
+
+.product-reviews {
+    margin-top: 24px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+}
+
+.product-reviews h2 {
+    margin: 0 0 22px;
+    color: #111827;
+    font-size: 24px;
+}
+
+.no-reviews {
+    margin: 0;
+    color: #6b7280;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.review-item {
+    padding: 18px;
+    background: #f8f9fb;
+    border-radius: 14px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.review-header strong {
+    color: #111827;
+    font-size: 15px;
+}
+
+.review-header span {
+    font-size: 14px;
+}
+
+.review-item p {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* =========================
+   LOADING / NOT FOUND
+========================= */
+
+.product-detail-loading,
+.product-not-found {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    color: #6b7280;
+}
+
+.product-not-found h2 {
+    margin: 0;
+    color: #111827;
+}
+
+.product-not-found a {
+    color: #111827;
+    font-weight: 600;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+    .product-detail-page {
+        padding: 24px 16px 50px;
+    }
+
+    .product-detail-card {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 20px;
+    }
+
+    .product-detail-image {
+        min-height: 320px;
+    }
+
+    .product-detail-image img {
+        height: 320px;
+    }
+
+    .product-detail-info h1 {
+        font-size: 28px;
+    }
+
+    .product-detail-price {
+        font-size: 26px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+    .product-detail-page {
+        padding: 18px 12px 40px;
+    }
+
+    .product-detail-back {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+
+    .product-detail-card {
+        padding: 14px;
+        border-radius: 16px;
+        gap: 20px;
+    }
+
+    .product-detail-image {
+        min-height: 260px;
+        border-radius: 14px;
+    }
+
+    .product-detail-image img {
+        height: 260px;
+    }
+
+    .product-detail-info h1 {
+        font-size: 24px;
+    }
+
+    .product-detail-price {
+        font-size: 24px;
+    }
+
+    .product-description,
+    .product-reviews {
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .product-description h2,
+    .product-reviews h2 {
+        font-size: 21px;
+    }
+
+    .product-description-content {
+        padding: 16px;
+    }
+
+    .product-composition p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+.product-detail-more {
+    margin-bottom: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.product-detail-more summary {
+    padding: 15px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #111827;
+    font-size: 15px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.product-detail-more summary::-webkit-details-marker {
+    display: none;
+}
+
+.product-detail-more summary span {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.product-detail-more[open] summary span {
+    transform: rotate(180deg);
+}
+
+.product-detail-more-content {
+    padding: 0 18px 18px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.product-detail-more-content h3 {
+    margin: 16px 0 8px;
+    color: #111827;
+    font-size: 16px;
+}
+
+.product-detail-more-content p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-line;
+}

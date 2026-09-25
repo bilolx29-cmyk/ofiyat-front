@@ -1,0 +1,1068 @@
+.home {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 40px 50px 80px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 55px 65px;
+    margin-bottom: 65px;
+    border-radius: 28px;
+    background: linear-gradient(135deg,
+            #ecfdf3 0%,
+            #f5fff8 55%,
+            #ffffff 100%);
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 43%;
+    max-width: 560px;
+    flex-shrink: 0;
+}
+
+.hero-content span {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #16a34a;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.hero-content h1 {
+    margin: 0 0 22px;
+    color: #111827;
+    font-size: 64px;
+    line-height: 1.02;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    margin: 0 0 32px;
+    color: #667085;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.hero-content button {
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    background: #16a34a;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.hero-content button:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    width: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-section {
+    width: 100%;
+}
+
+.section-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.section-header>div:first-child span {
+    display: block;
+    margin-bottom: 5px;
+    color: #16a34a;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.section-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.view-all {
+    border: none;
+    background: transparent;
+    color: #16a34a;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.view-all:hover {
+    color: #15803d;
+}
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.categories button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e5e7eb;
+    padding: 11px 18px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.categories button:hover {
+    border-color: #16a34a;
+    color: #16a34a;
+    background: #f0fdf4;
+    transform: translateY(-1px);
+}
+
+.categories button.active {
+    border-color: #16a34a;
+    background: #16a34a;
+    color: white;
+}
+
+.category-icon {
+    font-size: 17px;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.products-grid,
+.cheap-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.product-card:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+}
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product-image {
+    position: relative;
+    height: 260px;
+    margin: 10px;
+    border-radius: 12px;
+    background: #f5f6f7;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.25s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.04);
+}
+
+/* =========================
+   SALE
+========================= */
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: #16a34a;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    z-index: 2;
+}
+
+/* =========================
+   FAVORITE
+========================= */
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #374151;
+    font-size: 21px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 2;
+}
+
+.favorite-btn:hover {
+    color: #16a34a;
+}
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.product-info {
+    padding: 5px 14px 14px;
+}
+
+.product-category {
+    display: block;
+    margin-bottom: 5px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.product-name {
+    margin: 0;
+    min-height: 42px;
+    color: #111827;
+    font-size: 17px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.product-rating {
+    margin-top: 7px;
+    color: #f59e0b;
+    font-size: 13px;
+}
+
+.product-rating span {
+    color: #6b7280;
+}
+
+/* =========================
+   PRICE
+========================= */
+
+.product-price-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.product-old-price {
+    color: #8b8b8b;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.product-price {
+    color: #16a34a;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.add-cart-btn {
+    border: none;
+    padding: 9px 14px;
+    border-radius: 9px;
+    background: #16a34a;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.add-cart-btn:hover {
+    background: #15803d;
+    transform: translateY(-1px);
+}
+
+/* =========================
+   SHOW MORE
+========================= */
+
+.show-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.show-more button {
+    width: 400px;
+    max-width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.show-more button:hover {
+    background: #e5e7eb;
+}
+
+/* =========================
+   ARZON NARXLAR
+========================= */
+
+.cheap-section {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.cheap-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.cheap-header span {
+    display: block;
+    margin-bottom: 6px;
+    color: #16a34a;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.cheap-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .products-grid,
+    .cheap-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero-content {
+        width: 45%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-image {
+        width: 55%;
+    }
+}
+
+/* =========================
+   TABLET SMALL
+========================= */
+
+@media (max-width: 900px) {
+
+    .home {
+        padding: 25px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 40px;
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .products-grid,
+    .cheap-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   TELEFON
+========================= */
+
+@media (max-width: 700px) {
+
+    .products-grid,
+    .cheap-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-image {
+        height: 190px;
+    }
+
+    .product-info {
+        padding: 4px 10px 10px;
+    }
+
+    .product-name {
+        font-size: 15px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+    .add-cart-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .view-all {
+        font-size: 12px;
+    }
+
+    .cheap-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .cheap-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cheap-header h2 {
+        font-size: 28px;
+    }
+}
+
+/* =========================
+   KICHIK TELEFON
+========================= */
+
+@media (max-width: 600px) {
+
+    .home {
+        padding: 15px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 30px 24px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-content button {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .categories {
+        gap: 8px;
+    }
+
+    .categories button {
+        padding: 9px 15px;
+    }
+
+    .cheap-header h2 {
+        font-size: 28px;
+    }
+
+    .cheap-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   AFZALLIKLAR
+========================= */
+
+.advantages-section {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.advantages-header {
+    margin-bottom: 28px;
+}
+
+.advantages-header span {
+    display: block;
+    margin-bottom: 6px;
+    color: #16a34a;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.advantages-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+/* GRID */
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* CARD */
+
+.advantage-card {
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    transition: 0.2s ease;
+}
+
+.advantage-card:hover {
+    border-color: #bbf7d0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    transform: translateY(-3px);
+}
+
+/* ICON */
+
+.advantage-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    background: #f0fdf4;
+
+    font-size: 23px;
+}
+
+/* TEXT */
+
+.advantage-content h3 {
+    margin: 2px 0 7px;
+
+    color: #111827;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.advantage-content p {
+    margin: 0;
+
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .advantages-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   TELEFON
+========================= */
+
+@media (max-width: 700px) {
+
+    .advantages-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .advantages-header h2 {
+        font-size: 28px;
+    }
+
+    .advantages-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .advantage-card {
+        padding: 16px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .advantage-content h3 {
+        font-size: 15px;
+    }
+
+    .advantage-content p {
+        font-size: 12px;
+    }
+}
+
+/* =========================
+   KICHIK TELEFON
+========================= */
+
+@media (max-width: 500px) {
+
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .advantage-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    margin-top: 80px;
+    background: #111827;
+    color: white;
+}
+
+.footer-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 55px 50px 45px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+}
+
+/* BRAND */
+
+.footer-brand h2 {
+    margin: 0 0 15px;
+    color: #16a34a;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    margin: 0;
+    color: #9ca3af;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* COLUMNS */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h3 {
+    margin: 0 0 8px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.footer-column a {
+    width: fit-content;
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #16a34a;
+    transform: translateX(3px);
+}
+
+.footer-column p {
+    margin: 0;
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* BOTTOM */
+
+.footer-bottom {
+    border-top: 1px solid #1f2937;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 45px 30px;
+    }
+
+}
+
+/* =========================
+   TELEFON
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        margin-top: 55px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .footer-brand h2 {
+        font-size: 28px;
+    }
+
+    .footer-bottom {
+        padding: 18px 15px;
+    }
+
+}
+
+.home-search-result {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================
+   MOBILE FOOTER
+========================= */
+
+.footer-more-btn {
+    display: none;
+}
+
+.mobile-bottom-nav {
+    display: none;
+}
+
+.footer-columns {
+    display: contents;
+}
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer {
+        position: relative;
+        padding-bottom: 78px;
+    }
+
+    .footer-container {
+        display: block;
+        padding: 0;
+    }
+
+    .footer-brand {
+        padding: 28px 16px 20px;
+    }
+
+    .footer-brand h2 {
+        margin: 0 0 10px;
+        font-size: 24px;
+    }
+
+    .footer-brand p {
+        margin: 0;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    /* BATAFSIL BUTTON */
+
+    .footer-more-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        border: none;
+        border-top: 1px solid #e5e7eb;
+        border-bottom: 1px solid #e5e7eb;
+        background: transparent;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .footer-more-arrow {
+        font-size: 24px;
+        transition: transform 0.2s ease;
+    }
+
+    .footer-more-arrow.open {
+        transform: rotate(90deg);
+    }
+
+    /* COLUMNS YOPIQ */
+
+    .footer-columns {
+        display: none;
+    }
+
+    /* BATAFSIL BOSILGANDA */
+
+    .footer-columns.mobile-open {
+        display: block;
+        padding: 0 16px 20px;
+    }
+
+    .footer-columns.mobile-open .footer-column {
+        padding: 16px 0;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .footer-columns.mobile-open .footer-column:last-child {
+        border-bottom: none;
+    }
+
+    .footer-column h3 {
+        margin: 0 0 10px;
+    }
+
+    .footer-column a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .footer-column p {
+        margin: 8px 0;
+    }
+
+    .footer-bottom {
+        padding: 15px 16px;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    /* PASTKI NAVIGATION */
+
+    .mobile-bottom-nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+
+        height: 64px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        background: #ffffff;
+        border-top: 1px solid #e5e7eb;
+
+        box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .mobile-bottom-nav a {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 3px;
+
+        color: #374151;
+        text-decoration: none;
+
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .mobile-nav-icon {
+        font-size: 21px;
+        line-height: 1;
+    }
+
+    .mobile-bottom-nav a:hover {
+        color: #111827;
+    }
+}
